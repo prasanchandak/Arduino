@@ -1,1 +1,1 @@
-// Code to use the IR Sensor with NodeMCU
+// Code to use the LDR with NodeMCU
