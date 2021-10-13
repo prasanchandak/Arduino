@@ -1,1 +1,1 @@
-// Code to use the IR Sensor in Analog Mode with NodeMCU
+// Code to use the IR Sensor in Digital Mode with NodeMCU
