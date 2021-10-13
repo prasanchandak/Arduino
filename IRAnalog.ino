@@ -1,6 +1,6 @@
 // Code to use the IR Sensor in Digital Mode with NodeMCU
-int Balarm = D1;   
-int IRsensor = A0; 
+int Balarm = D0;   
+int IRsensor = A1; 
 void setup() {
   pinMode(IRsensor, INPUT); // IR sensor as input  
   pinMode(Balarm, OUTPUT);   // Buzzer alaram as output
@@ -14,12 +14,12 @@ void loop(){
   Serial.println(state); 
     if(state <60){              
       Serial.println("Motion detected!");  
-      digitalWrite (Balarm, HIGH);    //If intrusion detected ring the buzzer
+      digitalWrite (Balarm, LOW);    //If intrusion detected ring the buzzer
       delay(2000);                    
       
     }
     else {
-      digitalWrite (Balarm, LOW);     //No intrusion Buzzer off
+      digitalWrite (Balarm, HIGH);     //No intrusion Buzzer off
       Serial.println("Motion absent!");
       }
 }
